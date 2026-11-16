@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CLDebugConsole'
-  s.version      = '1.0.0'
+  s.version      = '1.0.2'
   s.summary      = 'A modular floating debug console for iOS applications'
   s.description  = <<-DESC
     CLDebugConsole provides a floating debug toolbar with pluggable modules.
