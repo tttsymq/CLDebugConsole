@@ -14,7 +14,7 @@ static const CGFloat kSearchBarHeight = 44.0;
 
 @property (nonatomic, strong) UIView *topToolbar;
 @property (nonatomic, strong) UIButton *saveButton;
-@property (nonatomic, strong) UIButton *copyButton;
+@property (nonatomic, strong) UIButton *actionBtn;
 @property (nonatomic, strong) UIButton *deleteButton;
 @property (nonatomic, strong) UIButton *minimizeButton;
 @property (nonatomic, strong) UIButton *fullscreenButton;
@@ -72,10 +72,10 @@ static const CGFloat kSearchBarHeight = 44.0;
 
     // Right: save, copy, delete
     _saveButton = [self createToolbarButton:@"CLConsole_save" action:@selector(saveTapped)];
-    _copyButton = [self createToolbarButton:@"CLConsole_load" action:@selector(copyTapped)];
+    _actionBtn = [self createToolbarButton:@"CLConsole_load" action:@selector(copyTapped)];
     _deleteButton = [self createToolbarButton:@"CLConsole_clear" action:@selector(deleteTapped)];
     [_topToolbar addSubview:_saveButton];
-    [_topToolbar addSubview:_copyButton];
+    [_topToolbar addSubview:_actionBtn];
     [_topToolbar addSubview:_deleteButton];
 }
 
@@ -182,7 +182,7 @@ static const CGFloat kSearchBarHeight = 44.0;
     _fullscreenButton.frame = CGRectMake(btnPadding + btnSize + btnSpacing, (kTopToolbarHeight - btnSize) / 2.0, btnSize, btnSize);
 
     _deleteButton.frame = CGRectMake(width - btnPadding - btnSize, (kTopToolbarHeight - btnSize) / 2.0, btnSize, btnSize);
-    _copyButton.frame = CGRectMake(width - btnPadding - btnSize * 2 - btnSpacing, (kTopToolbarHeight - btnSize) / 2.0, btnSize, btnSize);
+    _actionBtn.frame = CGRectMake(width - btnPadding - btnSize * 2 - btnSpacing, (kTopToolbarHeight - btnSize) / 2.0, btnSize, btnSize);
     _saveButton.frame = CGRectMake(width - btnPadding - btnSize * 3 - btnSpacing * 2, (kTopToolbarHeight - btnSize) / 2.0, btnSize, btnSize);
 
     // Position search bar elements

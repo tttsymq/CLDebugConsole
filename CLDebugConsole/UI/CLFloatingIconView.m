@@ -105,7 +105,7 @@ static const CGFloat kEdgePadding = 0.0;
     CGPoint translation = [pan translationInView:superView];
 
     switch (pan.state) {
-        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateBegan: {
             self.dragStartPoint = self.center;
             self.isDragging = YES;
             [UIView animateWithDuration:0.15 animations:^{
@@ -113,6 +113,7 @@ static const CGFloat kEdgePadding = 0.0;
                 self.transform = CGAffineTransformMakeScale(1.1, 1.1);
             }];
             break;
+        }
 
         case UIGestureRecognizerStateChanged: {
             CGPoint newCenter = CGPointMake(self.dragStartPoint.x + translation.x,
@@ -150,8 +151,9 @@ static const CGFloat kEdgePadding = 0.0;
             break;
         }
 
-        default:
+        default: {
             break;
+        }
     }
 }
 

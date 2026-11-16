@@ -1,6 +1,6 @@
-// CLDebugConsole/Core/CLDebugConsole.m
+// CLDebugConsole/Core/CLDebugConsoleCore.m
 
-#import "CLDebugConsole.h"
+#import "CLDebugConsoleCore.h"
 #import "CLDebugWindow.h"
 #import "CLFloatingIconView.h"
 #import "CLToolbarView.h"

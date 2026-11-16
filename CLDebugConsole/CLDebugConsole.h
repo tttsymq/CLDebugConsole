@@ -4,7 +4,7 @@
 #define CLDebugConsole_h
 
 // Core
-#import "CLDebugConsole.h"
+#import "CLDebugConsoleCore.h"
 #import "CLDebugPluginProtocol.h"
 #import "CLDebugMacros.h"
 

@@ -66,7 +66,7 @@
     if (!self.enableDailyRotation) return;
 
     NSDate *now = [NSDate date];
-    if (![CLDebugDateFormatter isSameDay:self.currentDate now]) {
+    if (![CLDebugDateFormatter isSameDay:self.currentDate date2:now]) {
         [self saveToDisk];
         self.currentDate = now;
     }

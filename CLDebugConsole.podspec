@@ -13,14 +13,14 @@ Pod::Spec.new do |s|
   s.author       = { 'Your Name' => 'your.email@example.com' }
   s.source       = { :git => 'https://github.com/tttsymq/CLDebugConsole.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
   s.requires_arc = true
 
   s.default_subspecs = 'Core', 'LogPlugin'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'CLDebugConsole/Core/**/*.{h,m}', 'CLDebugConsole/UI/**/*.{h,m}', 'CLDebugConsole/Utils/**/*.{h,m}', 'CLDebugConsole/CLDebugConsole.h'
-    core.public_header_files = 'CLDebugConsole/Core/**/*.h', 'CLDebugConsole/UI/**/*.h', 'CLDebugConsole/Utils/**/*.h', 'CLDebugConsole/CLDebugConsole.h'
+    core.source_files = 'CLDebugConsole/Core/**/*.{h,m}', 'CLDebugConsole/UI/**/*.{h,m}', 'CLDebugConsole/Utils/**/*.{h,m}'
+    core.public_header_files = 'CLDebugConsole/Core/**/*.h', 'CLDebugConsole/UI/**/*.h', 'CLDebugConsole/Utils/**/*.h'
     core.resource_bundles = {
       'CLDebugConsole' => ['CLDebugConsole/Resources/**/*']
     }
