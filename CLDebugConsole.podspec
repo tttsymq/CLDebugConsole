@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
     logging system with storage/filtering/export, and extensible architecture.
   DESC
 
-  s.homepage     = 'https://github.com/yourusername/CLDebugConsole'
+  s.homepage     = 'https://github.com/tttsymq/CLDebugConsole'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Your Name' => 'your.email@example.com' }
-  s.source       = { :git => 'https://github.com/yourusername/CLDebugConsole.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/tttsymq/CLDebugConsole.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
